@@ -1,7 +1,7 @@
 /**
- *
- *	Start: node server.js test
- *
+ *	@challenge	Day 5 - Doesn't He Have Intern-Elves For This?
+ *	@see		http://adventofcode.com/day/5
+ *	@author		dominic england
  */
 var fs  = require("fs");
 

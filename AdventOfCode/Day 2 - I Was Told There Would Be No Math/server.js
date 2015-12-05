@@ -1,3 +1,8 @@
+/**
+ *	@challenge	Day 2 - I Was Told There Would Be No Math
+ *	@see		http://adventofcode.com/day/2
+ *	@author		dominic england
+ */
 var fs  = require("fs"),
 	parts, wrappingPaper = 0,
 	i, ribbon = 0;

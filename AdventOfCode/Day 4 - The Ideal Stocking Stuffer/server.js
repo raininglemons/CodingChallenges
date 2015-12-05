@@ -1,3 +1,8 @@
+/**
+ *	@challenge	Day 4 - The Ideal Stocking Stuffer
+ *	@see		http://adventofcode.com/day/4
+ *	@author		dominic england
+ */
 var fs  = require("fs"),
 	md5 = require("md5"),
 	i = 0, cachedMd5;

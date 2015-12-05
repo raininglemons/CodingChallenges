@@ -1,3 +1,8 @@
+/**
+ *	@challenge	Day 3 - Perfectly Spherical Houses in a Vacuum
+ *	@see		http://adventofcode.com/day/3
+ *	@author		dominic england
+ */
 var fs  = require("fs"),
 	sleigh = function sleigh (x, y) {
 		this.x = x || 0;
