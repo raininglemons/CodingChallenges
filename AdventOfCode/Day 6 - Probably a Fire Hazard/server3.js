@@ -24,7 +24,7 @@ var brightness = fs.readFileSync(process.argv[2]).toString().split('\n')
 							)
 						);
 		return house;
-	}, Array.apply(null, Array(1000)).map(() => Array.apply(null, Array(1000)).map(Number.bind(this, 0))))
+	}, new Array(1000).fill().map(_ => Array(1000).fill(0)))
 	.reduce((brightness, x) => 
 		x.reduce((brightness, y) =>
 			brightness + y
