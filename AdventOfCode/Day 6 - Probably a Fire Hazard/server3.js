@@ -6,10 +6,11 @@
  *	Infinitely faster than the previous attempt!
  *
  */
-var fs  = require("fs");
+var fs  = require("fs"),
+	regex = /(toggle|turn off|turn on) ([0-9]{1,3}),([0-9]{1,3}) through ([0-9]{1,3}),([0-9]{1,3})/;
 	
 var brightness = fs.readFileSync(process.argv[2]).toString().split('\n')
-	.map((cmd) => cmd.match(/(toggle|turn off|turn on) ([0-9]{1,3}),([0-9]{1,3}) through ([0-9]{1,3}),([0-9]{1,3})/))
+	.map((cmd) => cmd.match(regex))
 	.reduce((house, cmd) => {
 		if (cmd)
 			for (var x = parseInt(cmd[2]); x <= parseInt(cmd[4]); x++)
@@ -31,4 +32,4 @@ var brightness = fs.readFileSync(process.argv[2]).toString().split('\n')
 		, brightness)
 	, 0);
 	
-console.log(brightness);
+console.log(`Sum of brightness: ${brightness}`);
