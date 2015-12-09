@@ -25,7 +25,7 @@ console.log(original - part1);
  *	PART 2
  *
  */
-var part2 = source.map(line => "\"" + line.replace(/\\/g, "\\\\").replace(/"/g, "\\\"") + "\"")
+var part2 = source.map(line => `"${line.replace(/\\/g, "\\\\").replace(/"/g, "\\\"")}"`)
 		.reduce((i, line) => i + line.length, 0);
 		
 console.log(part2 - original);
