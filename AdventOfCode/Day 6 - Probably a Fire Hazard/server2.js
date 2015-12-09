@@ -7,7 +7,7 @@
  *	@see http://jsperf.com/2d-array-of-numbers/2
  */
 var fs  = require("fs"),
-	heapdump = require("heapdump"), heapdumped = false,
+	//heapdump = require("heapdump"), heapdumped = false,
 	//house = Array.apply(null, Array(1000)).map(() => Array.apply(null, Array(1000)).map(Number.bind(this, 0))),//createArray(1000,1000),
 	house = new Uint8Array(1000 * 1000),
 	brightness = 0, statement = null,
