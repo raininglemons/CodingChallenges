@@ -30,7 +30,7 @@ class Password {
 			return false;
 		
 		let pairs = this.toString().match(/([a-z])\1/g);
-		if (pairs === null || pairs.length < 2)
+		if (pairs === null || new Set(pairs).size < 2)
 			return false;
 		
 		return true;
